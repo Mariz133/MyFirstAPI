@@ -37,6 +37,8 @@ const createUser = (request, response) => {
   })
 }
 
+
+
 const updateUser = (request, response) => {
   const id = parseInt(request.params.id)
   const { name, email } = request.body
@@ -70,5 +72,5 @@ module.exports = {
   createUser,
   updateUser,
   deleteUser,
- 
+  
 }
